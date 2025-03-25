@@ -1,0 +1,162 @@
+/* OptiCheck WMS Custom Styles */
+
+/* Import Comfortaa font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* Global styles */
+* {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+/* Header Logo customization */
+.header-logo {
+  background-color: transparent;
+  max-height: 55px;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+/* Main header customization */
+.main-header {
+  background-color: #2C3E50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header icon customization */
+.header-icon {
+  color: #E0F3D8;
+  fill: #E0F3D8;
+  stroke: #E0F3D8;
+}
+
+/* Main body background - gradient */
+.main-body {
+  background: linear-gradient(180deg, #32667E 0%, #9BBBB4 48.5%, #E0F3D8 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Start Camera button */
+.start-camera-button {
+  background-color: #2C3E50;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.start-camera-button:hover {
+  background-color: #375a7f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.start-camera-button:active {
+  background-color: #1a252f;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Measurement canvas (before camera starts) */
+.measurement-canvas {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 640px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Start Measurement button */
+.start-measurement-button {
+  background-color: #2C3E50;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.start-measurement-button:hover {
+  background-color: #375a7f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.start-measurement-button:active {
+  background-color: #1a252f;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Camera select dropdown styling */
+.cameraSelectRoot {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #9BBBB4;
+  color: #2C3E50;
+  padding: 8px 12px;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+/* Camera dropdown menu list */
+.MuiMenu-list {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Camera dropdown menu item hover */
+.MuiMenuItem-root:hover {
+  background-color: #E0F3D8;
+}
+
+/* Camera dropdown menu item focus */
+.cameraMenuItem:focus {
+  background-color: #9BBBB4;
+  color: #2C3E50;
+}
+
+/* Measurement help button */
+.measurementHelpButton {
+  background-color: rgba(44, 62, 80, 0.8);
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.measurementHelpButton:hover {
+  background-color: #2C3E50;
+  transform: scale(1.1);
+}
